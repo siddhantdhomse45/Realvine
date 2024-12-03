@@ -1,0 +1,89 @@
+/* Newsletter Section */
+
+
+.newsletter {
+  max-width: 100%; /* Full width */
+  padding: 40px 20px; /* Add spacing around */
+  text-align: center; /* Center text alignment */
+  background-color: #fff; /* White background */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.newsletter .section-title {
+  font-size: 24px; /* Large font for the title */
+  font-weight: 500; /* Medium weight */
+  color: #000; /* Black text for contrast */
+  margin-bottom: 10px;
+}
+
+.newsletter .section-text {
+  font-size: 16px; /* Regular font size for description */
+  color: #7d7d7d; /* Subtle gray color */
+  margin-bottom: 20px; /* Space below description */
+}
+
+.newsletter-form {
+  display: flex; /* Align input and button in a row */
+  justify-content: center; /* Center align the form */
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter .email-field {
+  flex: 1; 
+  max-width: 500px; /* Limit the maximum width */
+  padding: 12px 20px; /* Padding inside the input */
+  border: 1px solid #dcdcdc; /* Light gray border */
+  border-radius: 50px; /* Fully rounded input */
+  outline: none; /* Remove default browser outline */
+  font-size: 16px; /* Font size for input text */
+  color: #000; /* Black text for clarity */
+}
+
+.newsletter .email-field::placeholder {
+  color: #b0b0b0; /* Light gray placeholder text */
+}
+
+.newsletter .btn {
+  padding: 12px 30px; /* Button size matching input height */
+  background-color: #28a745; /* Bright green color for button */
+  color: #fff; /* White text for contrast */
+  border: none; /* No border for button */
+  border-radius: 50px; 
+  font-size: 16px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.newsletter .btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .newsletter .section-title {
+    font-size: 20px; /* Smaller font size for title */
+  }
+
+  .newsletter .section-text {
+    font-size: 14px; /* Smaller font size for text */
+  }
+
+  .newsletter-form {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 15px; /* Increase gap between stacked items */
+  }
+
+  .newsletter .email-field {
+    max-width: 100%; /* Full width input */
+  }
+
+  .newsletter .btn {
+    width: 100%; /* Full width button */
+  }
+}

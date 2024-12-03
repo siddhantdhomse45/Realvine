@@ -1,0 +1,156 @@
+.footer {
+  background-color: #1c1c1c;
+  color: #d3d3d3;
+  padding: 60px 20px;
+}
+
+.footer-top {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Distribute the sections evenly */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Add spacing between sections */
+}
+
+.footer-brand, .footer-list, .contact-details {
+  flex: 1; /* Make all sections occupy equal space */
+  max-width: 300px; /* Optional: Add width constraints if necessary */
+}
+
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bfbfbf;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #d3d3d3;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.footer-link ion-icon {
+  font-size: 16px;
+  color: #7cfc00; /* Green */
+}
+
+.footer-link:hover {
+  color: #7cfc00;
+}
+
+.footer-item ion-icon {
+  font-size: 20px;
+  color: #7cfc00;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.address-link {
+  color: #7cfc00;
+  text-decoration: underline;
+}
+
+.address-link:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Place text on the left and social links on the right */
+  align-items: center; /* Vertically align the items */
+  border-top: 1px solid #333333;
+  padding: 20px 0;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #bfbfbf;
+  margin: 0; /* Remove unnecessary margin */
+}
+
+.copyright-link {
+  color: #7cfc00;
+  text-decoration: none;
+}
+
+.copyright-link:hover {
+  opacity: 0.8;
+}
+
+.social-list {
+  display: flex; /* Horizontal layout for icons */
+  gap: 10px; /* Space between icons */
+}
+
+.social-link {
+  color: #d3d3d3;
+  border: 1px solid #333333;
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #7cfc00;
+  color: #ffffff;
+  border-color: #7cfc00;
+}
+/* Back to Top Button */
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--green-pigment);
+  color: var(--white);
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 4;
+}
+
+.back-top-btn.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
