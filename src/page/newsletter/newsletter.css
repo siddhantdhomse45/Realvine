@@ -1,89 +1,93 @@
 /* Newsletter Section */
-
-
 .newsletter {
-  max-width: 100%; /* Full width */
-  padding: 40px 20px; /* Add spacing around */
-  text-align: center; /* Center text alignment */
-  background-color: #fff; /* White background */
-  border-radius: 12px; /* Smooth rounded corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
+  /* position: absolute; */
+  top: 100%;
+  /* left: 50%; */
+  transform: translateX(13%);
+  max-width: calc(100% - 100px);
+  width: 80%;
+  background-color: var(--white);
+  padding: 40px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-3);
+  border-radius: var(--radius-12);
+  z-index: 1;
+ 
+
+}
+
+.newsletter .containers {
+  width: 80%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0px 20px; /* Spacing around content */
 }
 
 .newsletter .section-title {
-  font-size: 24px; /* Large font for the title */
-  font-weight: 500; /* Medium weight */
-  color: #000; /* Black text for contrast */
+  font-size: 24px; /* Slightly larger font for title */
+  font-weight: 600; /* Semi-bold text */
+  color: #000; /* Dark text color for visibility */
   margin-bottom: 10px;
 }
 
 .newsletter .section-text {
-  font-size: 16px; /* Regular font size for description */
-  color: #7d7d7d; /* Subtle gray color */
-  margin-bottom: 20px; /* Space below description */
+  font-size: 16px;
+  color: #7d7d7d; /* Slightly muted gray color for text */
+  margin-bottom: 20px;
 }
 
 .newsletter-form {
-  display: flex; /* Align input and button in a row */
-  justify-content: center; /* Center align the form */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .newsletter .email-field {
-  flex: 1; 
-  max-width: 500px; /* Limit the maximum width */
-  padding: 12px 20px; /* Padding inside the input */
-  border: 1px solid #dcdcdc; /* Light gray border */
-  border-radius: 50px; /* Fully rounded input */
-  outline: none; /* Remove default browser outline */
-  font-size: 16px; /* Font size for input text */
-  color: #000; /* Black text for clarity */
+  flex: 1;
+  max-width: 700px; /* Limit the width of the input */
+  padding: 12px 20px; /* Proper padding for readability */
+  border: 1px solid #dcdcdc; /* Light border around the input */
+  border-radius: 50px; /* Fully rounded corners */
+  outline: none;
+  font-size: 16px;
+  color: #000; /* Black text for contrast */
 }
 
 .newsletter .email-field::placeholder {
   color: #b0b0b0; /* Light gray placeholder text */
 }
 
-.newsletter .btn {
-  padding: 12px 30px; /* Button size matching input height */
-  background-color: #28a745; /* Bright green color for button */
-  color: #fff; /* White text for contrast */
-  border: none; /* No border for button */
-  border-radius: 50px; 
+.newsletter .btn-secondary {
+  padding: 12px 30px;
+  background-color: #28a745; /* Green color for the button */
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Rounded corners for the button */
   font-size: 16px;
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
 }
 
-.newsletter .btn:hover {
+.newsletter .btn-secondary:hover {
   background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-/* Media Query for Mobile Devices */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .newsletter {
-    padding: 20px 10px; /* Reduce padding for smaller screens */
-  }
-
-  .newsletter .section-title {
-    font-size: 20px; /* Smaller font size for title */
-  }
-
-  .newsletter .section-text {
-    font-size: 14px; /* Smaller font size for text */
-  }
-
   .newsletter-form {
     flex-direction: column; /* Stack input and button vertically */
-    gap: 15px; /* Increase gap between stacked items */
+    gap: 15px;
   }
 
   .newsletter .email-field {
-    max-width: 100%; /* Full width input */
+    max-width: 100%; /* Full width input on smaller screens */
   }
 
-  .newsletter .btn {
-    width: 100%; /* Full width button */
+  .newsletter .btn-secondary {
+    width: 100%; /* Full width button on small screens */
   }
 }

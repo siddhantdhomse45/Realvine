@@ -4,7 +4,7 @@ function Newsletter() {
   return (
     <div>
         <section className="newsletter" aria-label="newsletter">
-        <div className="container">
+        <div className="containers">
 
           <div className="wrapper">
             <h2 className="h2 section-title">Subscribe to Newsletter!</h2>
