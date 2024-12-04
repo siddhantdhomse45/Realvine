@@ -24,7 +24,7 @@ function Hero() {
           <div className="hero-form-wrapper">
             <div className="form-tab">
 
-              <button className="tab-btn active" data-tab-btn>Buy</button>
+              <button className="tab-btn " data-tab-btn>Buy</button>
               <button className="tab-btn" data-tab-btn>Sell</button>
               <button className="tab-btn" data-tab-btn>Rent</button>
 

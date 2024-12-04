@@ -1,6 +1,15 @@
-import React from 'react'
+import {useState} from 'react'
 import './navbar.css'
-function Navbar() {
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
+
+
+
   return (
     <div>
         <header className="header" data-header>
@@ -10,7 +19,7 @@ function Navbar() {
         <ion-icon name="business-outline"></ion-icon> Realvine
       </a>
 
-      <nav className="navbar container" data-navbar>
+      <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
         <ul className="navbar-list">
 
           <li>
@@ -42,10 +51,22 @@ function Navbar() {
 
       <a href="#" className="btn btn-secondary">Signup</a>
 
-      {/* <button className="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true" className="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" aria-hidden="true" className="close-icon"></ion-icon>
-      </button> */}
+      <button
+          className={`nav-toggle-btn ${isMenuOpen ? 'active' : ''}`}
+          aria-label="Toggle menu"
+          onClick={handleToggleMenu}
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            className={`menu-icon ${isMenuOpen ? 'hidden' : ''}`}
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-hidden="true"
+            className={`close-icon ${!isMenuOpen ? 'hidden' : ''}`}
+          ></ion-icon>
+        </button>
 
     </div>
   </header>
