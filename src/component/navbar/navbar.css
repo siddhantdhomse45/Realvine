@@ -65,6 +65,51 @@
   color: #4CAF50; /* Green hover effect */
 }
 
+/* General Button Styles */
+.nav-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Menu and Close Icon Styles */
+.menu-icon,
+.close-icon {
+  font-size: 1.8rem; /* Adjust size as needed */
+  color: #333; /* Icon color */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation */
+}
+
+/* Default state: Show menu icon, hide close icon */
+.menu-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.close-icon {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Toggle state: Hide menu icon, show close icon */
+.nav-toggle-btn.active .menu-icon {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.nav-toggle-btn.active .close-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 /* Signup Button */
 .signup-btn {
   background-color: #4CAF50; /* Green background */
