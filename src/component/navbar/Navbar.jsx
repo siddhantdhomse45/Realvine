@@ -42,10 +42,10 @@ function Navbar() {
 
       <a href="#" className="btn btn-secondary">Signup</a>
 
-      <button className="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+      {/* <button className="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true" className="menu-icon"></ion-icon>
         <ion-icon name="close-outline" aria-hidden="true" className="close-icon"></ion-icon>
-      </button>
+      </button> */}
 
     </div>
   </header>

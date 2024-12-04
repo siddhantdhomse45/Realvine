@@ -1,45 +1,30 @@
 /* Header Section */
-.header {
-  background-color: #fff; /* White background */
-  position: fixed; /* Fixed at the top */
+header {
+  background-color: var(--white);
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Full width */
-  padding: 15px 40px; /* Adjusted padding for spacing */
-  z-index: 1000; /* Ensures it's above other content */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  padding-block: 15px;
+  z-index: 4;
 }
 
 /* Flex Container for Header Content */
 .header .container {
   display: flex; /* Flexbox for alignment */
-  justify-content: space-between; /* Space between logo and menu */
+  justify-content: center; /* Center content in the container */
   align-items: center; /* Center items vertically */
-  max-width: 1200px; /* Restrict width */
+  max-width: 1200px;
   margin: 0 auto; /* Center the header */
-}
-
-/* Logo Styling */
-.logos {
-  display: flex; /* Align icon and text horizontally */
-  align-items: center; /* Center items vertically */
-  gap: 10px; /* Space between icon and text */
-  font-size: 2rem; /* Adjusted font size */
-  font-weight: 700; /* Bold for emphasis */
-  color: #000; /* Black text color */
-  text-decoration: none; /* Remove underline */
-}
-
-.logo ion-icon {
-  font-size: 2rem; /* Icon size */
-  color: #4CAF50; /* Green for the icon */
+  padding: 0 15px; /* Add spacing to prevent edge collision */
 }
 
 /* Navbar */
 .navbar {
   display: flex; /* Flexbox for horizontal layout */
   align-items: center; /* Center links vertically */
-  gap: 30px; /* Spacing between links */
+  justify-content: center; /* Center links horizontally */
+  gap: 20px; /* Spacing between links */
 }
 
 /* Navbar Links */
@@ -50,6 +35,8 @@
   padding: 0;
 }
 
+
+
 .navbar-link {
   font-size: 1.8rem; /* Font size for links */
   font-weight: 500; /* Medium weight */
@@ -57,102 +44,33 @@
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease; /* Smooth hover effect */
   padding: 8px 12px; /* Add padding for clickable area */
-  margin-right: 30px;
 }
 
-.navbar-link:hover,
-.navbar-link:focus {
-  color: #4CAF50; /* Green hover effect */
-}
-
-/* General Button Styles */
-.nav-toggle-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  font-size: 1.5rem;
-  position: relative;
-  z-index: 1000; /* Ensures it stays above other elements */
-}
-
-/* Menu and Close Icon Styles */
-.menu-icon,
-.close-icon {
-  font-size: 1.8rem; /* Adjust size as needed */
-  color: #333; /* Icon color */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation */
-}
-
-/* Default state: Show menu icon, hide close icon */
-.menu-icon {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.close-icon {
-  opacity: 0;
-  transform: scale(0.8);
-}
-
-/* Toggle state: Hide menu icon, show close icon */
-.nav-toggle-btn.active .menu-icon {
-  opacity: 0;
-  transform: scale(0.8);
-}
-
-.nav-toggle-btn.active .close-icon {
-  opacity: 1;
-  transform: scale(1);
-}
-
-
-/* Signup Button */
-.signup-btn {
-  background-color: #4CAF50; /* Green background */
-  color: #fff; /* White text */
-  font-size: 1rem; /* Button font size */
-  font-weight: 600; /* Bold for emphasis */
-  padding: 10px 20px; /* Padding for button */
-  border: none; /* Remove border */
-  border-radius: 20px; /* Rounded button */
-  text-decoration: none; /* Remove underline */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.signup-btn:hover {
-  background-color: #45A049; /* Slightly darker green */
-}
-
-/* Responsive Design */
+/* Center Navbar in Mobile View */
 @media (max-width: 768px) {
   .header .container {
     flex-direction: column; /* Stack logo and menu vertically */
     align-items: center; /* Center items */
-    text-align: center;
-    gap: 20px; /* Space between sections */
+    padding: 10px; /* Adjust padding for smaller screens */
+   margin-right: 450px;
+   
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar links vertically */
+    gap: 15px; /* Add spacing between links */
+    justify-content: center; /* Center links horizontally */
+    width: 100%;
+    text-align: center; /* Center text alignment */
   }
 
   .navbar-list {
     flex-direction: column; /* Stack links vertically */
-    gap: 15px; /* Add spacing between links */
+    gap: 10px; /* Spacing between items */
   }
 
-  .signup-btn {
-    margin-top: 10px; /* Space above button */
+  .navbar-link {
+    font-size: 1.5rem; /* Adjust size for smaller screens */
+    padding: 8px 0; /* Add vertical spacing for touch-friendly areas */
   }
-
-  .container,
-  .hero-form-wrapper { max-width: 700px; }
-
-  .section-text {
-    max-width: 55ch;
-    margin-inline: auto;
-  }
-
-  
 }
