@@ -16,7 +16,7 @@ const Navbar = () => {
     <div class="container">
 
       <a href="#" className="logos">
-        <ion-icon name="business-outline"></ion-icon> Realvine
+        <ion-icon name="business-outline"></ion-icon> Devcons
       </a>
 
       <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>

@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-brand">
           <a href="#" className="logo">
-            <ion-icon name="business-outline"></ion-icon> Realvine
+            <ion-icon name="business-outline"></ion-icon> Devcons
           </a>
           <p className="footer-text">
             A great platform to buy, sell, and rent your properties without any
@@ -103,9 +103,9 @@ function Footer() {
 
       <div className="footer-bottom">
         <p className="copyright">
-          &copy; 2022 Realvine. All Right Reserved by{" "}
+          &copy; Devcons Software Solutions Pvt.{" "}
           <a href="#" className="copyright-link">
-            codewithsadee
+           Ltd.
           </a>
           .
         </p>

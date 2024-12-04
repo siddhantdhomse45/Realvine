@@ -3,7 +3,7 @@ import './hero.css'
 function Hero() {
   return (
     <div>
-        
+
       <section className="section hero" aria-label="hero">
         <div className="container">
 
@@ -36,10 +36,10 @@ function Hero() {
 
                 <label for="search" className="input-label">Search : *</label>
 
-                <input type="search" name="search" id="search" placeholder="Search your home" required
-                  className="input-field" />
-
-                <ion-icon name="search-outline"></ion-icon>
+                <div className="search-box">
+                  <input type="search" name="search" id="search" placeholder="     Search your home" required className="input-field" />
+                  <ion-icon name="search-outline" className="search-icon"></ion-icon>
+                </div>
 
               </div>
 
