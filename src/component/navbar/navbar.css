@@ -95,18 +95,18 @@ header {
 .menu-icon {
   display: block;
 }
-
+/* 
 .close-icon {
-  display: none;
-}
+  display: block;
+} */
 
 .nav-toggle-btn.active .menu-icon {
   display: none;
 }
 
-.nav-toggle-btn.active .close-icon {
+/* .nav-toggle-btn.active .close-icon {
   display: block;
-}
+} */
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
@@ -136,7 +136,7 @@ header {
   }
 
   .navbar-link {
-    font-size: 2rem; /* Adjust font size for better readability */
+    font-size: 1.8rem; /* Adjust font size for better readability */
     padding: 10px 0;
   }
 
@@ -144,6 +144,7 @@ header {
     display: flex; /* Show toggle button in mobile */
     align-items: center;
     justify-content: center;
-    width: 20%;
+    font-size: 3.5rem;
+    
   }
 }

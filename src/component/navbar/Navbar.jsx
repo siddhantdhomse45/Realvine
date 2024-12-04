@@ -47,9 +47,10 @@ const Navbar = () => {
           </li>
 
         </ul>
+        <a href="#" className="btn btn-secondary">Signup</a>
       </nav>
 
-      <a href="#" className="btn btn-secondary">Signup</a>
+  
 
       <button
           className={`nav-toggle-btn ${isMenuOpen ? 'active' : ''}`}
@@ -61,11 +62,11 @@ const Navbar = () => {
             aria-hidden="true"
             className={`menu-icon ${isMenuOpen ? 'hidden' : ''}`}
           ></ion-icon>
-          <ion-icon
+          {/* <ion-icon
             name="close-outline"
             aria-hidden="true"
             className={`close-icon ${!isMenuOpen ? 'hidden' : ''}`}
-          ></ion-icon>
+          ></ion-icon> */}
         </button>
 
     </div>
