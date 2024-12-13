@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import propertyData from '../../Data';
+import propertyData from '../../data';
 import './property-detail.css';
 
 function PropertyDetail() {
