@@ -16,6 +16,23 @@
     color: #777;
     margin-bottom: 30px;
   }
+
+  .view-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3;
+  }
+  
+
   
   .property-list {
     display: grid;
