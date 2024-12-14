@@ -72,6 +72,9 @@ function PropertyDetail() {
                 <ul className="details-list">
                   <li>
                     <strong>Area:</strong> {property.area}
+                    <span className="right-side-item">
+                      <strong>Starting Price:</strong> {property.startingPrice}
+                    </span>
                   </li>
                   <li>
                     <strong>Beds:</strong> {property.beds}
@@ -85,7 +88,17 @@ function PropertyDetail() {
                   <li>
                     <strong>Rating:</strong> {property.rating} ({property.reviews} reviews)
                   </li>
+
                 </ul>
+
+                <div className="qr-code-section">
+                  <h3>RERA QR Code</h3>
+                  <img
+                    src="https://wallpapers.com/images/high/complex-q-r-code-pattern-2vc4e61vosv1szgj.png"
+                    alt="RERA QR Code"
+                    className="qr-code-image"
+                  />
+                </div>
               </div>
 
               {/* Project Summary */}

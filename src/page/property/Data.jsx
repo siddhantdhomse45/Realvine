@@ -10,6 +10,8 @@ const propertyData = [
       price: "$5000",
       rating: 5.0,
       reviews: 30,
+      startingPrice: "Sold Out",
+      peraCode: "https://jll-global-gdim-res.cloudinary.com/image/u…/PROD/JLL_Pune_Kohinoor%20Kaleido_8124_CERT_1.jpg",
       description:
         "This luxurious property features an expansive area with modern architecture and all necessary amenities for a comfortable lifestyle.",
       
@@ -62,6 +64,7 @@ const propertyData = [
       price: "$5000",
       rating: 5.0,
       reviews: 30,
+      startingPrice: "Sold Out",
       description:
         "An elegant property situated in the heart of the city with easy access to major facilities and shopping centers.",
         projectSummary: {
@@ -119,6 +122,7 @@ const propertyData = [
       price: "$5000",
       rating: 5.0,
       reviews: 30,
+      startingPrice: "Sold Out",
       description:
         "A modern home with spacious interiors and a serene environment, perfect for families.",
        projectSummary: {
@@ -160,6 +164,7 @@ const propertyData = [
       price: "$7000",
       rating: 4.8,
       reviews: 45,
+      startingPrice: "Sold Out",
       description:
         "A contemporary home designed with an open layout, providing ample space and stunning views.",
 
@@ -215,6 +220,7 @@ const propertyData = [
       price: "$3000",
       rating: 4.5,
       reviews: 25,
+      startingPrice: "Sold Out",
       description:
         "This cozy property is ideal for small families or individuals looking for modern, low-maintenance living.",
       projectSummary: {
@@ -271,6 +277,7 @@ const propertyData = [
       price: "$4500",
       rating: 4.9,
       reviews: 35,
+      startingPrice: "Sold Out",
       description:
         "A spacious family home featuring a large backyard, modern interiors, and easy access to schools and parks.",
       
