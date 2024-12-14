@@ -1,4 +1,4 @@
-/* Service Section */
+
 .service {
   text-align: center;
   padding: 60px 20px;
@@ -19,7 +19,7 @@
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Flexible grid */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
   gap: 40px;
   justify-items: center;
   margin-top: 30px;
@@ -38,11 +38,11 @@
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .service-card .card-icon {
-  background-color: #f0f9f4; /* Light mint color */
+  background-color: #f0f9f4; 
   width: 100px;
   height: 100px;
   display: grid;
@@ -52,8 +52,8 @@
 }
 
 .service-card .card-icon ion-icon {
-  font-size: 40px; /* Increase icon size */
-  color: #2ecc71; /* Green color */
+  font-size: 40px; 
+  color: #2ecc71; 
 }
 
 .service-card .card-title {
