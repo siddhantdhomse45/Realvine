@@ -499,20 +499,16 @@ body {
 }
 
 @media (max-width: 768px) {
+ 
   .facilities-container {
-    flex-direction: column; /* Stack items vertically for tablets */
-    gap: 20px; /* Increased gap for better spacing on smaller screens */
-    margin-left: 0; /* Remove left margin for tablets */
-  }
-
-  .facilities-column {
-    gap: 15px; /* Increase the gap between items on smaller screens */
+    gap: 20px; 
   }
 
   .facility-item {
-    font-size: 14px; /* Reduce font size for readability on smaller screens */
+    font-size: 14px; 
   }
 }
+
 .project-summary {
   margin-bottom: 30px;
   gap: 20px;
