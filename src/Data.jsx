@@ -1,3 +1,4 @@
+
 const propertyData = [
     {
       id: 1,

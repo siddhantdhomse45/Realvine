@@ -29,42 +29,83 @@ body {
   position: sticky;
   top: 30px; 
   margin-top: 20px;
-  align-self: start; /* Ensures proper alignment in a flex or grid layout */
-  width: 300px; /* Adjust width as needed */
+  align-self: start; 
+  width: 300px; 
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-  z-index: 80px; /* Ensures it stays above overlapping content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 80px; 
 }
-
 @media (max-width: 768px) {
+  .container2 {
+    padding: 0 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
   .right-section {
     position: static;
     top: auto;
     margin-bottom: 20px;
     width: 100%;
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .details-wrapper1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-section,
+  .right-section {
+    flex: 1; 
+    width: 100%;
+  }
+
+  .details-content {
+    padding: 15px;
+    max-width: 100%;
+    min-width: auto;
+    box-shadow: none;
+  }
+
+  .details-content .description {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .details-content .details-list li {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .details-content .details-list li strong {
+    min-width: 80px;
   }
 }
-
 
 .details-wrapper1 {
   display: flex;
   flex-direction: row;
-  /* gap: 20px; */
+
 }
 
 .left-section {
-  flex: 6; /* 60% width */
+  flex: 6; 
   display: flex;
   flex-direction: column;
   gap: 20px; 
 }
 
 .right-section {
-  flex: 4; /* 40% width */
+  flex: 4;
   padding: 20px;
-  /* border-radius: 8px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
  
@@ -78,7 +119,7 @@ body {
 
   .left-section,
   .right-section {
-    flex: 1; /* 100% width in mobile view */
+    flex: 1; 
   }
 
   .right-section {
@@ -256,12 +297,6 @@ body {
     flex-direction: column; 
   }
 
-  /* .contact-section {
-    margin-right: 0;
-    margin-bottom: 20px;
-    max-width: 100%;
-  } */
-
   .details-content {
     margin-left: 0;
     max-width: 100%;
@@ -272,7 +307,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 20px; */
   gap: 20px;
 }
 
@@ -588,4 +622,40 @@ body {
 .emi-calculator .loan-details span {
   font-size: 1.5rem;
   color: #666666;
+}
+
+
+@media (max-width: 768px) {
+.contact-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  padding: 10px;
+}
+
+.contact-form .form-group label {
+  font-size: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.contact-form .btn-submit {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.form-group label:last-of-type {
+  font-size: 12px;
+}
+
+.form-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
 }
