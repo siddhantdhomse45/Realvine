@@ -532,22 +532,12 @@ body {
   /* Project Summary adjustments */
   .project-summary {
     margin-bottom: 20px;
-    gap: 15px;
+    gap: 15px; /* Reduced gap for better space management on tablets */
   }
 
   .project-summary h3 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-  }
-
-  /* Horizontal Layout adjustments */
-  .horizontal-layout {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-    gap: 15px; /* Gap between columns */
-  }
-
-  .horizontal-layout div {
-    font-size: 1.4rem; /* Slightly smaller font for readability */
+    font-size: 1.8rem; /* Adjusted font size for tablets */
+    margin-bottom: 12px; /* Reduced margin for compact layout */
   }
 }
 
